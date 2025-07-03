@@ -56,6 +56,7 @@ function create(){
   this.input.keyboard.on('keydown-X', () => {
     game.destroy(true); 
     document.getElementById("game-over-message").style.display = "block"; 
+    document.getElementById("game-over-message").innerText = " ";
     for (let k = 0; k < gameOverText.length; k++) {
       setTimeout(() => {
       document.getElementById("game-over-message").innerText += gameOverText[k];
